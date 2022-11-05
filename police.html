@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Главная | Rust - Moscow</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu__inner">
+            <a href="/" class="menu__logo">Rust - Moscow</a>
+            <div class="menu__menu">
+                <a href="#" class="menu__item">товары</a>
+                <a href="#" class="menu__item">серверы</a>
+                <a href="#" class="menu__item">соц.сети</a>
+                <a href="#" class="menu__item">ссылки</a>
+                <a href="#" class="menu__item">RU</a>
+                <a class="menu__item menu__steam">войти через Steam</a>
+                <div class="nav__account menu__account" style="display: none;">
+                    <span class="nav__nickname">Nickname</span>
+                    <img src="/img/index/header/icon.png" alt="Иконка аккаунта" class="nav__icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h1 class="card__title">Смэрть 7 дней</h1>
+        <div class="card__block">
+            <p class="card__item">x4 рейт добычи ресурсов<span>рейт добычи компонентов x1</span></p>
+            <p class="card__item">3 ежедневных кита<span>команда /KIT</span></p>
+            <p class="card__item">2 доп. точки телепортации<span>управлять точками в /HOME</span></p>
+            <p class="card__item">Вход без очереди<span>работает сразу после покупки</span></p>
+            <p class="card__item">Карманный переработчик<span>команда /REC</span></p>
+            <p class="card__item">Перезарядка обмена 5м<span>команда /TRADE</span></p>
+            <p class="card__item">Префиксы<span>команда /CHAT</span></p>
+            <p class="card__item">Участие в SkinDrops<span>не нужно добывать 0.5EXP</span></p>
+        </div>
+        <p class="card__price">480 руб</p>
+        <div class="card__buttons">
+            <button class="card__button card__close">Закрыть</button>
+            <button class="card__button card__buy">Купить</button>
+        </div>
+    </div>
+    <div class="kits">
+        <h1 class="kits__title">СТАРТОВЫЕ КИТЫ</h1>
+        <div class="kits__buttons">
+            <button class="kits__button kits__button_active" id="button1">стартовые</button>
+            <button class="kits__button" id="button2">кабанчик</button>
+            <button class="kits__button" id="button3">джокер</button>
+            <button class="kits__button" id="button4">мясник</button>
+            <button class="kits__button" id="button5">смэрть</button>
+        </div>
+            <div class="kits__content kits__content_active" id="content1">
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Стартовый" - <span>ОТКАТ 15М</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Дом" - <span>ОТКАТ 1Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит за "#bloodrust" в нике - <span>ОТКАТ 48Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="kits__content" id="content2">
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Стартовый" - <span>ОТКАТ 15М</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Дом" - <span>ОТКАТ 1Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит за "#bloodrust" в нике - <span>ОТКАТ 48Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="kits__content kits__content_active" id="content3">
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Стартовый" - <span>ОТКАТ 15М</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Дом" - <span>ОТКАТ 1Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит за "#bloodrust" в нике - <span>ОТКАТ 48Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="kits__content" id="content4">
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Стартовый" - <span>ОТКАТ 15М</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Дом" - <span>ОТКАТ 1Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит за "#bloodrust" в нике - <span>ОТКАТ 48Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="kits__content kits__content_active" id="content5">
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Стартовый" - <span>ОТКАТ 15М</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит "Дом" - <span>ОТКАТ 1Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+                <div class="kits-items">
+                    <h2 class="kits-items__title">Кит за "#bloodrust" в нике - <span>ОТКАТ 48Ч</span></h2>
+                    <div class="kits-items__flex">
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                        <a href="#"><img src="img/index/kits/01.png" alt="предмет" class="kits-items__item"></a>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="wipe">
+        <h1 class="wipe__title">Блокировка предметов после вайпа</h1>
+        <div class="wipe__grid">
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+            <a href="#"><img src="img/index/wipe/01.png" alt="предмет" class="wipe__item"></a>
+        </div>
+    </div>
+    <div class="rules">
+        <h1 class="rules__description">ПРАВИЛА</h1>
+        <div class="rules__paragraph">
+            <h2 class="rules__title">Информация</h2>
+            <p class="rules__text">[1.1] - Не знание правил не освобождает Вас от ответственности.<br><br>[1.2] - Зайдя на сервер Вы автоматически соглашаетесь со всеми нижеперечисленными пунктами правил.<br><br>[1.3] - Если Вы уже были замечены с читами / макросами или использованием просвета на другом сервере / проекте и на вас есть пруфы - мы имеем право забанить Вас без проверки.<br><br>[1.4] - Администрация сама выбирает наказание дляигрока в зависимости от степени нарушения и обстоятельств. Нарушитель может получить как предупреждение, так и перманентный бан (временных блокировок нет). Блокировка выдаётся на всех серверах проекта, например, нарушив правила на Purple сервере — не получится пойти спокойно играть на Red.<br><br>[1.5] - Администрация не компенсирует игровые ценности, утраченные по причине вашей ошибки, технических проблем на сервере/хостинге, багов игры или контакта с нарушителями.<br><br>[1.6] - Администрация не вмешивается во взаимоотношения игроков, за тех с кем вы играете ответственны только Вы, поэтому в случае если игрок вас обманет — ему ничего за это не будет.<br><br>[1.7] - Вы несете ответственность за все свои аккаунты. Получив бан на одном аккаунте - Вы получите его и на последующих аккаунтах. То же самое будет если на одном из ваших аккаунтах имеется игровая блокировка (EAC).<br><br>[1.8] - Запрещено выдавать себя за Администратора, Модератора или Проверяющего.</p>
+        </div>
+        <div class="rules__paragraph">
+            <h2 class="rules__title">Информация</h2>
+            <p class="rules__text">[2.1] - Запрещено использовать/хранить/приобретать/ распространять стороннее ПО или любые другие средства, позволяющие получить преимущество над другими игроками. <br><br>[2.2] - Запрещено использование услуг читеров.<br><br>[2.3] - Запрещено использование багов с целью или без цели получения преимущества над другими игроками. Кбагам относятся и дыры в текстурах.<br><br>[2.4] - Запрещено превышать лимит игроков в команде:<br><br><span>× Нельзя устраивать альянсы и перемирия с соседями если в сумме вас больше указанного в названии сервера максимума<br><br>× Нельзя рейдить/антирейдить или убивать в 1+/2+/3+<br><br>× Нельзя каким-либо образом кооперироваться с другими игроками если в вашей команде уже максимально возможное количество игроков<br><br>× Частая смена тиммейта будет считаться за нарушения правила о лимите, тоже самое касается и игру с другим игроком пока тиммейт стоит афк или не находится рядом<br><br>× Запрещена смена тиммейта на время, если ваш основной тиммейта продолжит с вами играть<br><br>× Разрешено сменить напарника, если ваш предыдущий напарник в дальнейшем не будет с вами контактировать</span></p>
+        </div>
+        <div class="unbanned">
+            <h3 class="unbanned__title">Возможность разблокровки</h3>
+            <p class="unbanned__text">Через месяц после блокировки можно подать апелляцию, но, только в случае если бан был получен не за читы или макросы. Писать апелляцию нужно в личные сообщения отдельной группы: <a href="https://vk.com/bloodappeal">vk.com/bloodappeal</a></p>
+            <p class="unbanned__warning"><span>⚠️</span> Учтите, блокировки не обсуждаются, поэтому писать в основную группу, в чат дискорда/телеграма или куда-бы то ни было ещё - абсолютно бессмысленно, вне группы для апелляций разблокировку не получить, ни при каких обстоятельствах.<br><br>P.S. Купить разблокировку невозможно.</p>
+        </div>
+    </div>
+    <div class="modal__back"></div>
+    <div class="content">
+        <header class="header">
+            <div class="nav">
+                <nav class="container nav__container">
+                    <div class="nav__navigation">
+                        <a href="/" class="nav__logo">Rust - Moscow</a>
+                        <div class="nav__menu">
+                            <a href="#" class="nav__link">товары</a>
+                            <div class="nav__link">
+                                <a href="#servers">серверы</a>
+
+                                <div class="links-menu">
+                                    <a href="#" class="links-menu__item">красный</a>
+                                    <a href="#" class="links-menu__item">зеленый</a>
+                                    <a href="#" class="links-menu__item">желтый</a>
+                                    <a href="#" class="links-menu__item">пурпурный</a>
+                                </div>
+                            </div>
+                            <div class="nav__link">
+                                <a href="#link2">соц.сети</a>
+
+                                <div class="links-menu">
+                                    <a href="#" class="links-menu__item">telegram</a>
+                                    <a href="#" class="links-menu__item">discord</a>
+                                    <a href="#" class="links-menu__item">вконтакте</a>
+                                </div>
+                            </div>
+                            <div class="nav__link">
+                                <a href="#links">ссылки</a>
+
+                                <div class="links-menu">
+                                    <a href="#" class="links-menu__item">plugins</a>
+                                    <a href="#" class="links-menu__item">skin drops</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav__auth">
+                        <div class="nav__account" style="display: none;">
+                            <span class="nav__nickname">Nickname</span>
+                            <img src="/img/index/header/icon.png" alt="Иконка аккаунта" class="nav__icon">
+                        </div>
+                        <button class="nav__login">войти через Steam</button>
+                        <a href="#" class="nav__lang"><span>RU</span></a>
+                    </div>
+                    <div class="nav__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+            <img src="img/index/header/image.png" alt="изображение" class="header__image">
+        </header>
+        <section class="catalog">
+            <div class="police">
+                <div class="police__paragraph">
+                    <h2 class="police__title">1. Общие положения</h2>
+                    <p class="police__text">1.1 Используя данный сайт, вы соглашаетесь с правилами и обязуетесь их соблюдать,отдавая себе отчет что при нарушении их - вам может быть ограничен доступ к проекту как частично, так и перманентно.<br><br>1.2 Незнание правил или несогласие с ними, не освобождает вас от ответственности за их несоблюдение на территории проекта, любое нарушение в любом случае несет за собой последствия.<br><br>1.3 Администрация проекта Moscow.OVH (далее "Администрация") оставляет за собой право, не уведомляя пользователей, изменять, дополнять или удалять любые пункты правил. А обязанность пользователей самим периодически читать правила при появлении новой редакции которая указана в названии поста с правилами.<br><br>1.4 Администрация отказывается восстанавливать доступ или средства с аккаунта от которого были забыты либо утеряны данные. Обязанность пользователя заводить корректные и актуальные данные которые точно не будут забыты либо утеряны им.</p>
+                </div>
+                <div class="police__paragraph">
+                    <h2 class="police__title">2. Полномочия и обязанности Администрации</h2>
+                    <p class="police__text">2.1 Администрация никому и не чем не обязана, данный проект не являетсякоммерческим и администрация работает добровольно на благо сервера.<br><br>2.2 Абсолютно все пожертвования в их любом виде являются безвозмездными. Администрация данного сервера ни при каких условиях не обязуется проводить возврат потраченых средств.<br><br>2.3 Администрация не несёт ответственности за случаи причинения ущерба в результате посещения данного проекта (моральный ущерб, материальный ущерб и иные виды ущерба).<br><br>2.4 Администрация не несет ответственности за временную или постоянную невозможность использования сервера конкретным лицом или группой лиц. Ибо данные случаи могут быть вызваны блокировкой конкретного лица либо группы лиц, или же обстоятельствами не подвластными нашему влиянию.<br><br>2.5 Администрация в праве при косвенной или прямой угрозе работоспособности проекта приостановить доступ лицу инициатору или всей его под-сети к ресурсам проекта.<br><br>2.6 Администрация не обязана отчитываться перед игроками за решения по наказаниям в отношении любого игрока за исключением тем обжалования наказаний на форуме которая была создана исключительно человеком который получил наказание. В этом случае администрация предоставит доказательства по которым было принято решение о наказании, но срок на создание данной темы является одна неделя, по истечению этого срока любые претензии считаются не действительными.</p>
+                </div>
+            </div>
+            <div class="catalog__filters">
+                <div class="catalog__buttons">
+                    <button class="catalog__button catalog__button_kits">Киты</button>
+                    <button class="catalog__button catalog__button_wipe">Вайпблок</button>
+                    <button class="catalog__button catalog__button_rules">Правила</button>
+                </div>
+                
+                <div class="catalog__graphs">
+                    <div class="catalog-graph">
+                        <p class="catalog-graph__text">красный<span>Duo Procedural</span></p>
+                        <div class="catalog-graph__inner">
+                            <div class="catalog-graph__graph catalog-graph__graph_red"><div></div><span>188/200</span></div>
+                            <button class="catalog-graph__button">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L0.75 12.9952L0.75 0.00480951L12 6.5Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog-graph">
+                        <p class="catalog-graph__text">зеленый<span>Trio Procedural</span></p>
+                        <div class="catalog-graph__inner">
+                            <div class="catalog-graph__graph catalog-graph__graph_green"><div></div><span>170/200</span></div>
+                            <button class="catalog-graph__button">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L0.75 12.9952L0.75 0.00480951L12 6.5Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog-graph">
+                        <p class="catalog-graph__text">желтый<span>Trio Barrenl</span></p>
+                        <div class="catalog-graph__inner">
+                            <div class="catalog-graph__graph catalog-graph__graph_yellow"><div></div><span>63/200</span></div>
+                            <button class="catalog-graph__button">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L0.75 12.9952L0.75 0.00480951L12 6.5Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="catalog-graph">
+                        <p class="catalog-graph__text">пурпурный<span>Solo Procedural</span></p>
+                        <div class="catalog-graph__inner">
+                            <div class="catalog-graph__graph catalog-graph__graph_purple"><div></div><span>180/200</span></div>
+                            <button class="catalog-graph__button">
+                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.5L0.75 12.9952L0.75 0.00480951L12 6.5Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance">
+                    <img src="img/index/catalog/balance.png" alt="Пополнение баланса скинами" class="balance__image">
+                    <button class="balance__button">пополнить</button>
+                </div>
+            </div>           
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
